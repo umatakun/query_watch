@@ -1,0 +1,31 @@
+{
+    "name": "umatakun/query_watch",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "umatakun",
+            "email": "ddd.umatakun@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": "^7.0",
+        "laravel/framework": "^5.5|^6.0|^7.0|^8.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^6.0|^7.0|^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Umatakun\\QueryWatch\\": "./src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Umatakun\\QueryWatch\\QueryWatchServiceProvider"
+            ]
+        }
+    }
+}
